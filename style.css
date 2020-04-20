@@ -1,22 +1,26 @@
 body {
     margin: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
 }
 header {
     background: #424950;
-    height: 45px;
+    min-height: 45px;
 }
 
 .header {
     display: flex;
+    width: 100%;
+    min-height: 45px;
     align-items: center;
-    padding-top: 12px;
-    font-family: Montserrat;
-    font-size: 14px;
-    text-align: center;
-    color: #FFFFFF;
+    flex-shrink: 0;
 }
 .header div {
-    display: flex;
     align-items: center;
     margin-left: 10%;
 }
@@ -26,20 +30,14 @@ header {
 
 .main {
     width: 80%;
+    min-height: 50px;
     margin-left: 10%;
     margin-top: 40px;
 }
 
-.top-part {
+.top-box {
     display: flex;
     align-items: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
 }
 .catalog {
     display: flex;
@@ -47,7 +45,30 @@ header {
     justify-content: center;
     background: linear-gradient(293.76deg, #7136FF 5.11%, #A469FE 97.99%);
     border-radius: 2px;
-    width: 200px;
-    height: 50px;
+    width: 13%;
+    min-height: 50px;
     margin-left: 94px;
+}
+
+#parts-search {
+    width: 26%;
+    height: 50px;
+    margin-left: 40px;
+
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(276.28deg, #7136FF 5.11%, #A469FE 97.99%);
+    border-radius: 2px;
+    margin-left: 52px;
+}
+.text-cart {
+    margin-left: 1%;
+    min-height: 41px;
+    color: #3A3C4C;
 }
