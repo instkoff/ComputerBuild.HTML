@@ -7,6 +7,7 @@ body {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    background: #E5E5E5;
 }
 header {
     background: #424950;
@@ -24,52 +25,117 @@ header {
     align-items: center;
     margin:0 auto;
 }
+section {
+    width: 85%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .social-menu img {
     margin-left: 8px;
 }
 
 .main {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .top-box {
     display: flex;
-    align-items: center;
+    width: 100%;
     min-height: 50px;
-    margin-top: 41px;
+    margin-top: 3%;
 }
 
-.catalog {
+.logo {
+    align-self: center;
+    min-width: 115px;
+}
+
+.menu-items {
+    display: flex;
+    width: 100%;
+    margin-left: 8%;
+    justify-content: space-around;
+}
+
+.catalog-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(293.76deg, #7136FF 5.11%, #A469FE 97.99%);
     border-radius: 2px;
     min-width: 200px;
-    height: 50px;
-    margin-left: 94px;
 }
 
 #parts-search {
-    width: 50%;
-    height: 50px;
-    margin-left: 40px;
+    min-width: 52%;
+    margin-left: -2%;
 }
 
 .cart {
     display: flex;
+}
+
+.basket {
+    display: flex;
     align-items: center;
     justify-content: center;
     min-width: 50px;
-    height: 50px;
     background: linear-gradient(276.28deg, #7136FF 5.11%, #A469FE 97.99%);
     border-radius: 2px;
-    margin-left: 52px;
 }
-.text-cart {
-    min-height: 41px;
+
+.text-basket {
     color: #3A3C4C;
-    margin-left: 25px;
+    margin-left: 12%;
 }
+.hardware-list {
+    height: 100%;
+    width: 69%;
+    margin-top: 3%;
+}
+.hardware-item {
+    background: #FFFFFF;
+    color: #3A3C4C;
+    box-shadow: 0px 0px 15px rgba(170, 179, 204, 0.34);
+    border-radius: 10px;
+    min-height: 85px;
+    height: 85px;
+    background-image:  url(img/check.png);
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+    margin-bottom: 1%;
+}
+#scrolldown-button {
+    background: url(img/arrow.png) no-repeat;
+    background-position: 95% 50%;
+    text-align: left;
+    text-indent: 8%;
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hardware-list-info {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    color: #3A3C4C;
+    box-shadow: 0px 0px 15px rgba(170, 179, 204, 0.34);
+    border-radius: 10px;
+    width: 28%;
+    min-height: 400px;
+    align-content: space-between;
+    margin-top: 3%;
+
+}
+footer {
+    height: 77px;
+    width: 100%;
+}
+
