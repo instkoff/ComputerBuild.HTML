@@ -25,16 +25,19 @@ header {
     align-items: center;
     flex-shrink: 0;
 }
+
 .header div {
     align-items: center;
     margin:0 auto;
 }
+
 section {
     width: 85%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .social-menu img {
     margin-left: 8px;
 }
@@ -90,11 +93,13 @@ section {
     color: #3A3C4C;
     margin-left: 12%;
 }
+
 .hardware-list {
     height: 100%;
-    min-width: 69%;
+    min-width: 77%;
     margin-top: 3%;
 }
+
 .hardware-item {
     background: #FFFFFF;
     color: #3A3C4C;
@@ -107,6 +112,7 @@ section {
     background-position: 4% 50%;
     margin-bottom: 0.5%;
 }
+
 #scrolldown-button {
     background: url(img/arrow.png) no-repeat;
     background-position: 95% 50%;
@@ -121,42 +127,68 @@ section {
 }
 
 .hardware-list-info {
-    width: 21%;
+    width: 18%;
     min-width: min-content;
     margin-top: 3%;
-    margin-left: auto;
+    margin-left: 2%;
     margin-right: auto;
-
 }
-.total-items {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
+
+.box {
     background: #FFFFFF;
     color: #3A3C4C;
     box-shadow: 0px 0px 15px rgba(170, 179, 204, 0.34);
-    border-radius: 10px 10px 0px 0px;
-    height: 50%;
 }
+
+.total-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    height: 55%;
+}
+
 .total-items span a:link {
     text-decoration: none;
     border-bottom: 1px dashed;
 }
-
-
-
-.total-cost {
+.total-items div {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    background: #FFFFFF;
-    color: #3A3C4C;
+    justify-content: left;
+    min-width: 245px;
+    width: 80%;
+    height: 80%;
+}
+
+.total-cost {
     margin-top: 1px;
-    box-shadow: 0px 0px 15px rgba(170, 179, 204, 0.34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     border-radius: 0px 0px 10px 10px;
-    height: 30%;
+    height: 35%;
+}
+
+.total-cost div {
+    display: flex;
+    flex-direction: column;
+    min-width: 245px;
+    width: 80%;
+    height: 80%;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 54px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 }
 
 footer {
