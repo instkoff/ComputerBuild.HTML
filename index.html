@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -20,10 +22,12 @@
                 <img src="img/Mail.png" alt="">
             </div>
             <div class="telephone">
-                <a href="tel:8-800-11-22-333" style="color:#FFFFFF; text-decoration: none;"><strong>8-800-11-22-333</strong></a>&nbsp;(с 05:00 до 00:00)
+                <a href="tel:8-800-11-22-333"
+                    style="color:#FFFFFF; text-decoration: none;"><strong>8-800-11-22-333</strong></a>&nbsp;(с 05:00 до
+                00:00)
             </div>
             <div>Войти / Зарегистрироваться</div>
-        </div>             
+        </div>
     </header>
     <section>
         <div class="top-box">
@@ -44,46 +48,88 @@
             </div>
         </div>
     </section>
-<section>
-    <div class="main">
-        <div class="hardware-list">
-            <div class="hardware-item">
-                <input type="submit" value="Процессор" id="scrolldown-button">
-            </div>
-            <div class="hardware-item">
-                <input type="submit" value="Материнская плата" id="scrolldown-button">
-            </div>
-            <div class="hardware-item">
-                <input type="submit" value="Корпус" id="scrolldown-button">
-            </div>
-            <div class="hardware-item">
-                <input type="submit" value="Охлаждение процессора" id="scrolldown-button">
-            </div>
-            <div class="hardware-item">
-                <input type="submit" value="Оперативная память" id="scrolldown-button">
-            </div>
-        </div>
-        <div class="hardware-list-info">
-            <div class="total-items box">
-                <div>
-                    <span>Обязательные комплектующие</span>
-                    <span><img src="img/progressbar.png" alt=""></span>
-                    <span><img src="img/instruction-ico.png" alt="">&nbsp;<a href="#">Инструкция по сборке</a></span>
-                    <span><img src="img/share-ico.png" alt="">&nbsp;<a href="#">Поделиться ссылкой</a></span>
-                    <span><img src="img/download-ico.png" alt="">&nbsp;<a href="#">Сохранить конфигурацию</a></span>
+    <section>
+        <div class="main">
+            <div class="hardware-list">
+                <!--Спросить как правильно-->
+                <!--И тут я начал пытаться по БЭМ :)-->
+                <div class="hardware-item">
+                    <div class="hardware-item hardware-item_opened">
+                        <div class="hardware-item hardware-item__button_flat">
+                            <input type="submit" value="Процессор" class="scrolldown-button">
+                            <div class="rectangle-separator"></div>
+                        </div>
+                        <div class="hardware-item__filter">
+                            <div>Цена</div>
+                            <div class="hardware-item__cost-filter">
+                                    <input type="text" placeholder="2 000" class="hardware-item__cost-input">
+                                    <input type="text" placeholder="18 543" class="hardware-item__cost-input">
+                            </div>
+                            <div class="rectangle-separator"></div>
+                            <div class="hardware-item__manufacturer-filter hardware-item__filter_opened">
+                                <input type="submit" value="Производитель" class="scrolldown-button scrolldown-button_filter">
+                                <span class="hardware-item__filter-checkboxes">
+                                    <label for=""><input type="checkbox" name="amd" value="AMD" checked>AMD</label>
+                                    <label for=""><input type="checkbox" name="intel" value="Intel">Intel</label>
+                                </span>
+                            </div>
+                            <div class="rectangle-separator"></div>
+                            <div class="hardware-item__socket-filter">
+                                <input type="submit" value="Сокет" class="scrolldown-button scrolldown-button_filter">
+                                <div class="rectangle-separator"></div>
+                            </div>
+                            <div class="hardware-item__proc-family-filter">
+                                <input type="submit" value="Семейство процессоров" class="scrolldown-button scrolldown-button_filter">
+                                <div class="rectangle-separator"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="hardware-item">
+                        <div class="hardware-item hardware-item_closed">
+                            <input type="submit" value="Материнская плата" class="scrolldown-button">
+                        </div>
+                    </div>
+                    <div class="hardware-item">
+                        <div class="hardware-item hardware-item_closed">
+                            <input type="submit" value="Корпус" class="scrolldown-button">
+                        </div>
+                    </div>
+                    <div class="hardware-item">
+                        <div class="hardware-item hardware-item_closed">
+                            <input type="submit" value="Охлаждение процессора" class="scrolldown-button">
+                        </div>
+                    </div>
+                    <div class="hardware-item">
+                        <div class="hardware-item hardware-item_closed">
+                            <input type="submit" value="Оперативная память" class="scrolldown-button">
+                        </div>
+                    </div>
+                </div>
+                <div class="hardware-list-info">
+                    <div class="total-items box">
+                        <div class="hardware-list-info__container">
+                            <span>Обязательные комплектующие</span>
+                            <span><img src="img/progressbar.png" alt=""></span>
+                            <span><img src="img/instruction-ico.png" alt="">&nbsp;<a href="#">Инструкция по
+                                    сборке</a></span>
+                            <span><img src="img/share-ico.png" alt="">&nbsp;<a href="#">Поделиться ссылкой</a></span>
+                            <span><img src="img/download-ico.png" alt="">&nbsp;<a href="#">Сохранить
+                                    конфигурацию</a></span>
+                        </div>
+                    </div>
+                    <div class="total-cost box">
+                        <div>
+                            <span>Итого:</span><br>
+                            <span style="font-size: 30px; line-height: 37px;">55 320</span><br>
+                            <span class="buy button">Купить</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="total-cost box">
-                <div>
-                    <span>Итого:</span>
-                    <span style="font-size: 30px; line-height: 37px;">55 320</span>
-                    <span class="buy button">Купить</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <footer></footer>
 </body>
+
 </html>
