@@ -104,15 +104,15 @@ section {
 .hardware-item {
     color: #3A3C4C;
     min-height: 85px;
-    width: 100%;
+    width: 95%;
     margin-bottom: 0.5%;
 }
 
 .scrolldown-button {
     background: url(img/arrow.png) no-repeat;
-    background-position: 95% 50%;
+    background-position: 100% 50%;
     text-align: left;
-    text-indent: 8%;
+    text-indent: 4%;
     font: inherit;
     cursor: pointer;
     border: none;
@@ -131,12 +131,14 @@ section {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(170, 179, 204, 0.34);
     border-radius: 10px;
     min-height: 443px;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 .hardware-item .hardware-item_opened .hardware-item__button_flat {
@@ -146,7 +148,8 @@ section {
     align-self: flex-start;
     background-image:  url(img/check.png);
     background-repeat: no-repeat;
-    background-position: 4% 50%;
+    background-position: 0 50%;
+    border-bottom: 1px solid #e2e2e2;
     min-width: 100%;
     margin: 0px;
 
@@ -161,40 +164,85 @@ section {
     border-radius: 10px;
     background-image:  url(img/check.png);
     background-repeat: no-repeat;
-    background-position: 4% 50%;
+    background-position: 5% 50%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: 0px;
 }
-.rectangle-separator {
-    align-self: center;
-    width: 91%;
-    height: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #e2e2e2;
-}
-.hardware-item .hardware-item__filter {
+
+.hardware-item .hardware-item__filters {
     text-align: left;
-    max-width: 30%;
-    align-self: stretch;
+    max-width: 22%;
+    align-self: flex-start;
+    border-right: 1px solid #e2e2e2;
+    border-collapse: separate;
+    padding-right:  20px;
+    font-size: 12px;
+    line-height: 15px;
+
 }
 .hardware-item__cost-input {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
     width: 48%;
     height: 34px;
+}
+.hardware-item__filter {
+    color: #3A3C4C;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .hardware-item__cost-filter{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding-bottom: 7%;
 }
 .hardware-item__filter_opened {
-    margin-bottom: 20px;
+    padding-bottom: 7%;
 }
+
 .hardware-item__filter-checkboxes {
     display: flex;
     justify-content: space-around;
 }
+.products-list {
+    align-self: flex-start;
+}
+
+.products-list .product {
+    display: flex;
+    align-items: center;
+}
+.products-list .product .product-text {
+    text-align: left;
+}
+.products-list .product .product-text .product-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.products-list .product .product-text .product-cost {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.products-list .product .product-text .product-description {
+    font-size: 10px;
+    line-height: 16px;
+}
+.products-list .product .add-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    width: 34px;
+    height: 34px;
+}
+
 .hardware-list-info {
     max-width: 320px;
     min-width: 280px;
