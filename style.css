@@ -205,7 +205,6 @@ section {
     max-width: 22%;
     align-self: flex-start;
     border-right: 1px solid #e2e2e2;
-    border-collapse: separate;
     padding-right:  20px;
     font-size: 12px;
     line-height: 15px;
@@ -240,7 +239,6 @@ section {
     justify-content: space-around;
 }
 .products-list {
-    align-self: flex-start;
     width: 70%;
 }
 .product {
@@ -250,6 +248,7 @@ section {
 }
 .product .product-text {
     text-align: left;
+    min-width: 65%;
 }
 .product .product-text .product-name {
     font-weight: 600;
